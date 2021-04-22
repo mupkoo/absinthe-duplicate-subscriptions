@@ -1,5 +1,6 @@
 defmodule ShowcaseWeb.UserSocket do
   use Phoenix.Socket
+  use Absinthe.Phoenix.Socket, schema: ShowcaseWeb.Schema
 
   ## Channels
   # channel "room:*", ShowcaseWeb.RoomChannel
